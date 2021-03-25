@@ -1,0 +1,47 @@
+{
+  "name": "pricegram",
+  "version": "0.3.1",
+  "description": "A Telegram bot that tracks Amazon products and sends alerts about price and availabilty changes.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r dotenv/config app.js",
+    "dev": "nodemon -r dotenv/config app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --ignore-path .gitignore . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleG94/Pricegram.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "price",
+    "tracker",
+    "amazon"
+  ],
+  "author": "Alessandro Genovese",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AleG94/Pricegram/issues"
+  },
+  "homepage": "https://github.com/AleG94/Pricegram#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "config": "^3.3.1",
+    "currency-symbols": "^0.4.1",
+    "dotenv-cli": "^4.0.0",
+    "extract-domain": "^2.2.1",
+    "mongoose": "^5.9.23",
+    "parse-money": "^1.0.10",
+    "puppeteer": "^5.4.1",
+    "puppeteer-extra": "^3.1.15",
+    "puppeteer-extra-plugin-stealth": "^2.6.5",
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "nodemon": "^2.0.4"
+  }
+}
